@@ -53,7 +53,7 @@ def _best_match(query: str, dataset: Dict[str, Dict[str, float]]) -> Tuple[str |
 def get_nutrition(food_name: str) -> Dict[str, Any]:
     """
     Main API: returns nutrition for a detected food name.
-    Applies fuzzy matching to find closest entry.
+    Applies fuzzy matching to find closest entry
     """
     dataset = _load_dataset()
     query = _normalize_query(food_name)
